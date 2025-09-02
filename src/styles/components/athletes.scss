@@ -1,0 +1,15 @@
+.athletes{
+    padding: 125px 0;
+
+    p{
+        text-align: right;
+        width: 55%;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: end;
+    }
+}
