@@ -8,10 +8,10 @@
     font-size: typo(16px,16px);
     font-weight: 900;
     text-transform: uppercase;
+    transition: all .5s ease-in-out;
 
     &:hover{
         background-color: var(--color-primary);
         text-decoration: none;
-        transition: all .5s ease-in-out;
     }
 }
