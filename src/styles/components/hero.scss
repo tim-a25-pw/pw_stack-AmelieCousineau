@@ -10,6 +10,17 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: 50% 50%;
+
+        @media screen and (max-width: 1100px) {
+            object-position: 80% 50%;
+            filter: brightness(70%);
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            object-position: 90% 50%;
+            filter: brightness(50%);
+        }
     }
 }
 
@@ -36,5 +47,13 @@
     p{
         color: var(--color-white);
         width: 50%;
+
+        @media screen and (max-width: $breakpoint-ml) {
+            width: 75%;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 100%;
+        }
     }
 }
