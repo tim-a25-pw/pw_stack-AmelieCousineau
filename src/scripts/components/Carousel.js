@@ -64,5 +64,9 @@ export default class Carousel {
     if('space' in this.element.dataset){
       this.options.spaceBetween = this.element.dataset.space;
     }
+
+    if('direction' in this.element.dataset){
+      this.options.direction = this.element.dataset.direction;
+    }
   }
 }

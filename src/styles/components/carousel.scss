@@ -1,0 +1,54 @@
+/* ==========================================================================
+   carousel / component
+   ========================================================================== */
+.swiper-pagination-bullet {
+    --size: 30px;
+
+    background: var(--color-black);
+    border-radius: 100%;
+    transition: transform 0.4s $ease-out-expo;
+    height: var(--size);
+    width: var(--size);
+    opacity: 100%;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        --size: 15px;
+    }
+}
+
+.swiper-horizontal> .swiper-pagination-bullets {
+    bottom: var(--swiper-pagination-bottom, 40px);
+
+    @media screen and (max-width: $breakpoint-md) {
+        bottom: var(--swiper-pagination-bottom, 30px);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        bottom: var(--swiper-pagination-bottom, 20px);
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        bottom: var(--swiper-pagination-bottom, 5px);
+    }
+}
+
+.swiper-pagination-bullet-active {
+    transform: scale(1.05);
+    background: var(--color-primary);
+}
+
+.swiper-full{
+    overflow: visible;
+}
+
+.swiper{
+    height: 70vh;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
+}
