@@ -3,6 +3,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--grid-gap);
     width: 100%;
+
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 580px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card{

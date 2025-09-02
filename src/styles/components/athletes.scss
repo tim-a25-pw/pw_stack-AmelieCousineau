@@ -1,9 +1,25 @@
 .athletes{
     padding: 125px 0;
 
+    @media screen and (max-width: $breakpoint-ml) {
+            padding: 90px 0;
+        }
+
+    @media screen and (max-width: $breakpoint-sm) {
+            padding: 60px 0;
+        }
+
     p{
         text-align: right;
         width: 55%;
+
+        @media screen and (max-width: $breakpoint-ml) {
+            width: 75%;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 100%;
+        }
     }
 
     .wrapper{
@@ -11,5 +27,13 @@
         flex-direction: column;
         gap: 50px;
         align-items: end;
+
+        @media screen and (max-width: $breakpoint-md) {
+            gap: 30px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            gap: 20px;
+        }
     }
 }
